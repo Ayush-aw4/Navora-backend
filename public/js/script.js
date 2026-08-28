@@ -35,4 +35,4 @@ socket.on("receive-location",(data)=>{
     }else{
         markers[id] = L.marker([latitude, longitude]).addTo(map);
     }
-})
+}) 
