@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: navora
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: ""
+      - key: SOCKET_SERVER_URL
+        value: ""
