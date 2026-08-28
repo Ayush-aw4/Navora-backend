@@ -1,4 +1,6 @@
-const socket = io()
+const socket = window.SOCKET_SERVER_URL
+  ? io(window.SOCKET_SERVER_URL, { transports: ["websocket", "polling"] })
+  : io();
 
 
 
